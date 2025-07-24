@@ -20,26 +20,7 @@
 
         </form>
 
+    </div>  
 
-
-
-
-
-    </div>
-
-    <div>
-        <!-- url generation:  -->
-         <!-- {{url::current()}}  -->
-          <!-- {{url()->current()}} -->
-
-           <!-- {{url::full()}}  -->
-          
-
-          <!-- when we want to cheack that from which page our this page is opend we use  -->
-
-          {{url::previous()}}
-
-
-        </div>
 </body>
 </html>

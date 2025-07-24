@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\LoginController;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\UserController;
 
@@ -60,3 +61,8 @@ Route::prefix('student')->group(function(){
     Route::get('/all' , [UserController::class, 'all'])->name('all');
 
 });
+
+
+
+Route::view('/login1', 'login');
+Route::post('login1' , [LoginController::class, 'loginSesion'] )->name('login.put');
