@@ -35,6 +35,19 @@
             <h1>{{$name[$i]}}</h1>
             @endfor
           </div>   
+          <div>
+            this is data that i got from session wit if condition
+            @if(session('email'))
+                <h1>{{session('email')}}</h1>
+            @endif
+            @if(session('password'))
+                <h1>{{session('password')}}</h1>
+            @endif
+           
+
+          <h1>
+            <a href="/logout">logout</a>
+          </h1>
 
 </body>
 </html>

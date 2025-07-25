@@ -66,3 +66,4 @@ Route::prefix('student')->group(function(){
 
 Route::view('/login1', 'login');
 Route::post('adduser1' , [LoginController::class, 'loginSesion'] )->name('login.put');
+Route::get('logout' , [LoginController::class, 'logout'] )->name('logout');
