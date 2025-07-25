@@ -7,8 +7,8 @@
 </head>
 <body>
     <div>
-    <form  action="login1" method="post">
-     
+    <form  action="adduser1" method="post">
+     @csrf
             <input type="email"  placeholder="enter your password " name="email">
             <br>
             <input type="password" placeholder="enter your password" name="password">
@@ -19,7 +19,7 @@
 
 
         <div>
-            {{$data->email}}
+        
         </div>
     </div>
 </body>
