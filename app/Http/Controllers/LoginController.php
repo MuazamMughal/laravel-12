@@ -12,9 +12,10 @@ class LoginController extends Controller
     // }
 //now ther i put data in session
     public function loginSesion(Request $request){
-        $request->session()->put('email',$request->input('email'));
-        $request->session()->put('password',$request->input('password'));
+        // $request->session()->put('email',$request->input('email'));
+        // $request->session()->put('password',$request->input('password'));
        
+        $request->session()->put('allData', $request->input());
         return redirect('view');
     }
 
