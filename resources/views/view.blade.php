@@ -20,9 +20,15 @@
         <h1>this is mughal</h1>
      @elseif($name[2]== 'muhammad')
         <h1>this is muhammad</h1>
-        @endif;
+        @endif
 </div>
 
+
+      <div>
+        @if(session('message'))
+            <h1>{{session('message')}}</h1>
+        @endif
+      </div>
         <!-- then i use foreach loop to itreate all the stuff  -->
          <div class="bg-blue-500 p-4  text-white">
          @foreach($name as $key=>$value)
@@ -48,6 +54,8 @@
           <h1>
             <a href="/logout">logout</a>
           </h1>
+          
+          
 
 </body>
 </html>
