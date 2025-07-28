@@ -17,4 +17,9 @@ class DataBaseController extends Controller
         $request->session()->flash('message', 'Data Successfully Added');
         return redirect('data1');
     }
+
+    public function getdata(){
+        $data = Data::all();
+        return view('data_list',['data'=>$data]);
+    }
 }

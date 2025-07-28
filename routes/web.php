@@ -73,3 +73,6 @@ Route::get('logout' , [LoginController::class, 'logout'] )->name('logout');
 
 Route::view('data1', 'add_data');
 Route::post('/data' , [DataBaseController::class, 'adddata'] );
+
+
+Route::get('data_list', [DataBaseController::class ,'getdata']);
