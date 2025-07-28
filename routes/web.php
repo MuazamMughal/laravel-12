@@ -1,8 +1,10 @@
 <?php
 
+use App\Http\Controllers\DataBaseController;
 use App\Http\Controllers\LoginController;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\UserController;
+use Symfony\Component\HttpKernel\DataCollector\DataCollector;
 
 // Route::get('/', function () {
 //     return view('welcome');
@@ -67,3 +69,7 @@ Route::prefix('student')->group(function(){
 Route::view('/login1', 'login');
 Route::post('adduser1' , [LoginController::class, 'loginSesion'] )->name('login.put');
 Route::get('logout' , [LoginController::class, 'logout'] )->name('logout');
+
+
+Route::view('data1', 'add_data');
+Route::post('/data' , [DataBaseController::class, 'adddata'] );
