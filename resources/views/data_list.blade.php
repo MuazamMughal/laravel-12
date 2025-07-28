@@ -19,4 +19,9 @@
                 <td><a href="/data1">delete</a></td>
             </tr>
         @endforeach
+
+        <div>
+
+        <h2>oif you wanted to check data go there</h2>
+            <a href="/data1">cheak data</a>
 </div>
