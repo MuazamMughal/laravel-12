@@ -17,13 +17,20 @@
                 <td>{{$value->username}}</td>
                 <td>{{$value->number}}</td>
                 <td>{{$value->password}}</td>
-                <td><a href="/data1">delete</a></td>
+                <td><a href="/delete/{{$value->id}}">delete</a></td>
                 <td><a href="/data1">edit</a></td>
             </tr>
         @endforeach
 
         <div>
 
-        <h2>oif you wanted to check data go there</h2>
-            <a href="/data1">Add data</a>
+</div>
+<div>
+    @if(session('deletemessage'))    
+        <h1>{{session('deletemessage')}}</h1>
+    @endif
+</div>
+<div>   
+<h2>oif you wanted to check data go there</h2>
+<a href="/data1">Add data</a>
 </div>

@@ -22,4 +22,10 @@ class DataBaseController extends Controller
         $data = Data::all();
         return view('data_list',['data'=>$data]);
     }
+    public function delete(Request $request , $id){
+        $data = Data::find($id);
+        $data->delete();
+        $request->session()->flash('deletemessage', 'Data Successfully Deleted');
+        return redirect('data_list');
+    }
 }
