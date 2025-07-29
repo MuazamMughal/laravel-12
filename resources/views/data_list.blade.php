@@ -9,6 +9,7 @@
             <th>number</th>
             <th>password</th>
             <th>manupulate</th>
+            <th>Edit</th>
         </tr>
         @foreach($data as $key=>$value)
             <tr>
@@ -17,11 +18,12 @@
                 <td>{{$value->number}}</td>
                 <td>{{$value->password}}</td>
                 <td><a href="/data1">delete</a></td>
+                <td><a href="/data1">edit</a></td>
             </tr>
         @endforeach
 
         <div>
 
         <h2>oif you wanted to check data go there</h2>
-            <a href="/data1">cheak data</a>
+            <a href="/data1">Add data</a>
 </div>
