@@ -18,7 +18,7 @@
                 <td>{{$value->number}}</td>
                 <td>{{$value->password}}</td>
                 <td><a href="/delete/{{$value->id}}">delete</a></td>
-                <td><a href="/data1">edit</a></td>
+                <td><a href="/edit/{{$value->id}}">edit</a></td>
             </tr>
         @endforeach
 
