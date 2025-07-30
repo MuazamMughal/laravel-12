@@ -77,3 +77,6 @@ Route::post('/data' , [DataBaseController::class, 'adddata'] );
 
 Route::get('data_list', [DataBaseController::class ,'getdata']);
 Route::get('delete/{id}', [DataBaseController::class ,'delete']);
+
+
+Route::get('edit/{id}', [DataBaseController::class ,'edit']);

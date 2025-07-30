@@ -28,4 +28,8 @@ class DataBaseController extends Controller
         $request->session()->flash('deletemessage', 'Data Successfully Deleted');
         return redirect('data_list');
     }
+    public function edit($id){
+        $data = Data::find($id);
+        return view('edit_page',['data'=>$data]);
+    }
 }
