@@ -29,7 +29,8 @@ class DataBaseController extends Controller
         return redirect('data_list');
     }
     public function edit($id){
-        $data = Data::find($id);
-        return view('edit_page',['data'=>$data]);
+        // $req = Data::find($id);
+        // return view('edit_page', ['data' => $req]);
+        return view('edit_page');
     }
 }
